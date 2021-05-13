@@ -9,7 +9,7 @@ class loginController extends Controller
     public function index ()
 	{
 		
-		return view('auth.login');
+		return view('auth.login' );
 	}
 	
 	public function store(Request $request)
@@ -22,7 +22,7 @@ class loginController extends Controller
 	 
 	 
 	 //sign in 
-	 if(!auth()->attempt($request->only('email','password') ))
+	 if(!auth()->attempt($request->only('email','password'),$request->remember ))
 	 {
 		 return back()->with('status','invalid login details'); 
 	 }

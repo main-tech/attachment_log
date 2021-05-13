@@ -15,6 +15,9 @@
 		<span style="color:red">{{$message}}</span>
 		@enderror 
    <br>
+   <input type="checkbox" name="remember" id="remember">
+   <label for="remember">Remember me</label>  
+   <br>
    <input type="submit">
  </form>
 

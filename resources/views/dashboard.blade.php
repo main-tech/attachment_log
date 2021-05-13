@@ -6,5 +6,12 @@ dashboard
 @csrf
 <button type="submit">Logout</button>
 </form>
-	{{dd(auth()->user())}}
-@endsection
+	<br>
+	Student Name: {{$student['first_name']}} {{$student['last_name']}}
+	<br>
+	School: {{$student['school']}}
+	<br>
+	Course: {{$student['course']}}
+	<br>
+	
+@endsection 
