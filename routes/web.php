@@ -17,7 +17,7 @@ use App\Http\Controllers\Auth\logoutController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::middleware(['auth'])->group(function () {
+Route::middleware(['auth','student'])->group(function () {
    Route::get('/dashboard',[dashboardController::class,'index'])->name('dashboard');
    Route::post('/logout',[logoutController::class, 'store'])->name('logout');
 
