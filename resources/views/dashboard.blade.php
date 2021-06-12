@@ -59,7 +59,12 @@
         <div>
           <h4>{{$student['first_name']}} {{$student['last_name']}}</h4>
           <small>Student Account</small>
+		  
         </div>
+		<form action="{{route('logout')}}" method="post">
+@csrf
+<button type="submit">Logout</button>
+</form>
       </div>
     </header>
 
