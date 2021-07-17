@@ -3,7 +3,7 @@ use App\Http\Controllers\Auth\registerstdController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
-use App\Http\Controllers\dashboardController;
+use App\Http\Controllers\Student\dashboardController;
 use App\Http\Controllers\Auth\loginController;
 use App\Http\Controllers\Auth\logoutController;
 

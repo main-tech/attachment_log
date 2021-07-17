@@ -24,9 +24,12 @@
         <li><a href="" class="active"><span class="las la-igloo"></span>
           <span>Dashboard</span></a>
         </li>
+		<form type="POST">
+		@csrf
         <li><a href="daily-entry"><span class="las la-pen-nib"></span>
           <span>New Daily Entry</span></a>
         </li>
+		</form>
         <li><a href=""><span class="las la-list"></span>
           <span>View Daily Entries</span></a>
         </li>
